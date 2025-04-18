@@ -23,19 +23,25 @@ The questions we will answer through this analysis are the following :
 ...
 
 ## Data dictionary
+- Number of Rows: 149116
+- Number of Columns: 18
+  
 Column Name | Data Type | Description
 | ------------- |:-------------:| :-------------:|
-date | DATETIME | Timestamp of the patient's ER visit (format: YYYY-MM-DD HH:MM:SS).
-patient_id | VARCHAR | Unique identifier for each patient (anonymized ID).
-patient_gender | CHAR | Patient’s gender. Common values: M (Male), F (Female).
-patient_age | Integer | Patient's age in years.
-patient_sat_score | Float | Patient satisfaction score (typically 1-10); NaN indicates missing data.
-patient_first_inital | CHAR | First letter of the patient's first name.
-patient_last_name | VARCHAR	 | Patient's last name (anonymized).
-patient_race | VARCHAR	 | Self-reported race/ethnicity of the patient.
-patient_admin_flag | Boolean | Indicates if the patient was admitted to the hospital (True = Admitted).
-patient_waittime | Integer | Time (in minutes) the patient waited before being seen.
-department_referral | 	VARCHAR | Department to which the patient was referred after ER visit (if applicable).
+Transaction_ID | Integer/String | Unique identifier for each transaction.
+Transaction_Date | DateTime | Date and time when the transaction occurred.
+Product_Name | String | Name of the product sold (e.g., Espresso, Latte).
+Product_Category | String | Category of the product (e.g., Hot Beverage, Cold Beverage, Pastry).
+Quantity_Sold | Integer | Number of units sold in the transaction.
+Unit_Price | Float | Price per unit of the product.
+Total_Sales | Float | Total revenue from the transaction (Quantity_Sold × Unit_Price).
+Payment_Method | String | Mode of payment used (e.g., Cash, Credit Card, Mobile Payment).
+Customer_Age_Group | String | Age group of the customer (e.g., 18-24, 25-34).
+Customer_Gender | String | Gender of the customer (e.g., Male, Female).
+Store_Location | String | Location of the store where the transaction took place.
+Day_of_Week | String | Day of the week when the transaction occurred (e.g., Monday, Tuesday).
+Time_of_Day | String | Time period of the day (e.g., Morning, Afternoon, Evening).
+Season | String | Season during which the transaction occurred (e.g., Winter, Summer).
 
 ## Methodology and tools used
 Tables
