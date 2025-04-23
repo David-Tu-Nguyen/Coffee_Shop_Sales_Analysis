@@ -28,20 +28,20 @@ The questions we will answer through this analysis are the following :
   
 Column Name | Data Type | Description
 | ------------- |:-------------:| :-------------:|
-Transaction_ID | Integer/String | Unique identifier for each transaction.
+Transaction_ID | Integer | Unique identifier for each transaction.
 Transaction_Date | DateTime | Date and time when the transaction occurred.
-Product_Name | String | Name of the product sold (e.g., Espresso, Latte).
-Product_Category | String | Category of the product (e.g., Hot Beverage, Cold Beverage, Pastry).
+Product_Name | Varchar | Name of the product sold (e.g., Espresso, Latte).
+Product_Category | Varchar | Category of the product (e.g., Hot Beverage, Cold Beverage, Pastry).
 Quantity_Sold | Integer | Number of units sold in the transaction.
 Unit_Price | Float | Price per unit of the product.
 Total_Sales | Float | Total revenue from the transaction (Quantity_Sold × Unit_Price).
-Payment_Method | String | Mode of payment used (e.g., Cash, Credit Card, Mobile Payment).
-Customer_Age_Group | String | Age group of the customer (e.g., 18-24, 25-34).
-Customer_Gender | String | Gender of the customer (e.g., Male, Female).
-Store_Location | String | Location of the store where the transaction took place.
-Day_of_Week | String | Day of the week when the transaction occurred (e.g., Monday, Tuesday).
-Time_of_Day | String | Time period of the day (e.g., Morning, Afternoon, Evening).
-Season | String | Season during which the transaction occurred (e.g., Winter, Summer).
+Payment_Method | Varchar | Mode of payment used (e.g., Cash, Credit Card, Mobile Payment).
+Customer_Age_Group | Varchar | Age group of the customer (e.g., 18-24, 25-34).
+Customer_Gender | Varchar | Gender of the customer (e.g., Male, Female).
+Store_Location | Varchar | Location of the store where the transaction took place.
+Day_of_Week | Varchar | Day of the week when the transaction occurred (e.g., Monday, Tuesday).
+Time_of_Day | Varchar | Time period of the day (e.g., Morning, Afternoon, Evening).
+Season | Varchar | Season during which the transaction occurred (e.g., Winter, Summer).
 
 ## Methodology and tools used
 Tables
